@@ -56,6 +56,16 @@ type GettingStartedStartEntryContent = BuiltinGettingStartedStartEntry[];
 export const startEntries: GettingStartedStartEntryContent = [
 	{
 		id: 'welcome.showNewFileEntries',
+		title: "Connect an org",
+		description: "Auth into one of your Salesforce orgs to begin developing",
+		icon: Codicon.link,
+		content: {
+			type: 'startEntry',
+			command: 'command:welcome.showNewFileEntries',
+		}
+	},
+	{
+		id: 'welcome.showNewFileEntries',
 		title: localize('gettingStarted.newFile.title', "New File..."),
 		description: localize('gettingStarted.newFile.description', "Open a new untitled text file, notebook, or custom editor."),
 		icon: Codicon.newFile,
